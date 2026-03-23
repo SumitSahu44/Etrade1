@@ -27,7 +27,7 @@ const Stats = () => {
               <div className={`mb-4 ${item.color} group-hover:scale-110 transition-transform duration-300`}>
                 {item.icon}
               </div>
-              <h3 className="text-3xl font-black text-white italic tracking-tighter mb-1">
+              <h3 className="text-3xl font-black text-white   mb-1">
                 {item.value}
               </h3>
               <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">
@@ -40,7 +40,7 @@ const Stats = () => {
         {/* Text Ribbon */}
         <div className="mt-16 flex flex-wrap justify-center gap-8 opacity-40">
           {['GST Verified', 'ISO Certified', 'Hyderabad Textile Association', 'Safe Payments'].map((text) => (
-            <span key={text} className="text-white text-[10px] font-black uppercase tracking-[0.3em]">
+            <span key={text} className="text-white text-[10px] font-black uppercase ">
               ● {text}
             </span>
           ))}

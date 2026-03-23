@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="pt-32 pb-20 px-6 bg-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <h1 className="text-5xl font-black italic mb-6 text-slate-900 uppercase">Get in Touch</h1>
+          <h1 className="text-5xl font-black  mb-6 text-slate-900 uppercase">Get in Touch</h1>
           <p className="text-slate-500 mb-12">Hyderabad office and PAN India support desk for textile queries.</p>
           
           <div className="space-y-8">

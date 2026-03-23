@@ -7,8 +7,8 @@ const NewsPortal = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
           <div>
-            <span className="text-blue-600 font-bold text-sm tracking-[0.3em] uppercase">Updates</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-2 italic">Circular & Industry Blog</h2>
+            <span className="text-blue-600 font-bold text-sm  uppercase">Updates</span>
+            <h2 className="text-4xl font-bold text-slate-900 mt-2 ">Circular & Industry Blog</h2>
           </div>
           <button className="px-6 py-2 border-2 border-slate-900 rounded-full font-bold text-sm hover:bg-slate-900 hover:text-white transition-all">
             VIEW ALL POSTS
@@ -23,7 +23,7 @@ const NewsPortal = () => {
               <div className="absolute top-6 left-6 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold">LATEST NEWS</div>
             </div>
             <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Future of Sustainable Textiles in India 2026</h3>
-            <p className="text-slate-500 mt-3 line-clamp-2 italic">How Indian manufacturers are adopting green energy and recycled materials to lead the global market...</p>
+            <p className="text-slate-500 mt-3 line-clamp-2 ">How Indian manufacturers are adopting green energy and recycled materials to lead the global market...</p>
           </div>
 
           {/* Circular/Notice Sidebar */}

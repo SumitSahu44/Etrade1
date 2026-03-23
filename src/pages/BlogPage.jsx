@@ -42,7 +42,7 @@ const BlogPage = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
             <span className="text-blue-600 font-black text-[10px] tracking-[.3em] uppercase mb-4 block">Knowledge Hub</span>
-            <h1 className="text-5xl md:text-6xl font-black text-slate-900 italic tracking-tighter leading-none">
+            <h1 className="text-5xl md:text-6xl font-black text-slate-900   leading-none">
               Textile <span className="text-blue-600">Insights.</span>
             </h1>
             <p className="text-slate-500 mt-6 text-lg font-medium">
@@ -98,7 +98,7 @@ const BlogPage = () => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-4 text-[10px] font-bold text-slate-400 mb-3 uppercase tracking-tighter">
+              <div className="flex items-center gap-4 text-[10px] font-bold text-slate-400 mb-3 uppercase ">
                 <span className="flex items-center gap-1"><Calendar size={12}/> {post.date}</span>
                 <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
                 <span className="flex items-center gap-1"><Clock size={12}/> {post.readTime}</span>

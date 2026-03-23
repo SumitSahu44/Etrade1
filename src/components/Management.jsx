@@ -7,7 +7,7 @@ const Management = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-6 italic">About Parekh e-Trade</h2>
+            <h2 className="text-4xl font-bold text-slate-900 mb-6 ">About Parekh e-Trade</h2>
             <p className="text-slate-600 leading-relaxed mb-6">
               Parekh e-Trade Market (Textile) Hyderabad based ek advanced platform hai jo Buyers aur Sellers ko Textile Raw Materials, Finished Products, aur Machineries ke liye ek digital bridge provide karta hai.
             </p>

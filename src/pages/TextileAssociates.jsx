@@ -16,8 +16,8 @@ const TextileAssociates = () => {
         
         {/* HEADER */}
         <div className="mb-16">
-          <span className="text-blue-600 font-black text-[10px] tracking-[0.3em] uppercase mb-4 block italic">Pan-India Presence</span>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight tracking-tighter uppercase">
+          <span className="text-blue-600 font-black text-[10px]  uppercase mb-4 block ">Pan-India Presence</span>
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight  uppercase">
             Our Textile <br /> <span className="text-blue-600">Associates Network.</span>
           </h2>
           <p className="text-slate-500 mt-6 text-lg max-w-xl font-medium">
@@ -54,7 +54,7 @@ const TextileAssociates = () => {
               
               {/* Small Stats Overlay */}
               <div className="absolute -bottom-6 -right-6 bg-slate-900 text-white p-8 rounded-[2rem] shadow-2xl hidden md:block">
-                <p className="text-3xl font-black italic">500+</p>
+                <p className="text-3xl font-black ">500+</p>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Total Associates</p>
               </div>
             </div>
@@ -77,7 +77,7 @@ const TextileAssociates = () => {
                     <p className="text-xs text-slate-500 mt-1 font-medium">{hub.strength}</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs font-black text-blue-600 uppercase tracking-tighter">{hub.count}</p>
+                    <p className="text-xs font-black text-blue-600 uppercase ">{hub.count}</p>
                     <ArrowUpRight size={16} className="ml-auto mt-1 text-slate-200 group-hover:text-blue-600 transition-colors" />
                   </div>
                 </div>
@@ -87,7 +87,7 @@ const TextileAssociates = () => {
             {/* JOIN AS ASSOCIATE CTA */}
             <div className="mt-10 p-8 bg-blue-600 rounded-[2.5rem] text-white relative overflow-hidden group">
                <div className="relative z-10">
-                 <h4 className="text-xl font-bold mb-2 italic">Be part of the network?</h4>
+                 <h4 className="text-xl font-bold mb-2 ">Be part of the network?</h4>
                  <p className="text-blue-100 text-sm mb-6 font-medium">Expand your textile business digitally across India.</p>
                  <button className="bg-white text-blue-600 px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all">
                    Register as Associate

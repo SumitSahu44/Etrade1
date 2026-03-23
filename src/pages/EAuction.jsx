@@ -47,7 +47,7 @@ const EAuction = () => {
 
             <div className="grid grid-cols-2 gap-10">
               <div>
-                <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b pb-2">Technical Specs</h3>
+                <h3 className="text-sm font-bold text-slate-900 uppercase  mb-4 border-b pb-2">Technical Specs</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-500">Weight</span>
@@ -65,7 +65,7 @@ const EAuction = () => {
               </div>
 
               <div>
-                <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 border-b pb-2">Logistics</h3>
+                <h3 className="text-sm font-bold text-slate-900 uppercase  mb-4 border-b pb-2">Logistics</h3>
                 <div className="space-y-4 text-sm">
                   <div className="flex items-center gap-2">
                     <MapPin size={16} className="text-blue-600" />
@@ -88,7 +88,7 @@ const EAuction = () => {
               <div className="bg-white border border-slate-200 p-10 rounded-[2.5rem] shadow-sm">
                 <p className="text-[11px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4 text-center">Highest Active Bid</p>
                 <div className="flex justify-center items-baseline gap-2 mb-10">
-                  <span className="text-7xl font-bold text-slate-900 italic">₹{bid}</span>
+                  <span className="text-7xl font-bold text-slate-900 ">₹{bid}</span>
                   <span className="text-slate-400 font-medium">/kg</span>
                 </div>
 
@@ -130,7 +130,7 @@ const EAuction = () => {
               {/* DISCLAIMER */}
               <div className="flex gap-4 px-6">
                 <Info size={18} className="text-slate-300 shrink-0" />
-                <p className="text-[11px] text-slate-400 leading-relaxed italic">
+                <p className="text-[11px] text-slate-400 leading-relaxed ">
                   Taxes and logistics charges are calculated at the end of the auction. All bids are binding under Hyderabad jurisdiction.
                 </p>
               </div>

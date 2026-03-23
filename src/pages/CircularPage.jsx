@@ -52,7 +52,7 @@ const CircularPage = () => {
               <Bell size={24} className="animate-bounce" />
               <span className="text-[10px] font-black tracking-[.3em] uppercase">Official Updates</span>
             </div>
-            <h1 className="text-5xl font-black text-slate-900 italic tracking-tighter leading-none">
+            <h1 className="text-5xl font-black text-slate-900   leading-none">
               Notice <span className="text-blue-600">Board.</span>
             </h1>
             <p className="text-slate-500 mt-6 text-lg font-medium">
@@ -96,7 +96,7 @@ const CircularPage = () => {
               
               {/* Date Block */}
               <div className="bg-slate-50 px-6 py-4 rounded-3xl text-center min-w-[120px] group-hover:bg-blue-50 transition-colors">
-                <p className="text-[10px] font-black text-slate-400 uppercase tracking-tighter">Circular Date</p>
+                <p className="text-[10px] font-black text-slate-400 uppercase ">Circular Date</p>
                 <p className="text-sm font-black text-slate-900">{n.date}</p>
               </div>
 
@@ -121,7 +121,7 @@ const CircularPage = () => {
               </div>
 
               {/* Subtle Decorative ID Background */}
-              <span className="absolute -right-4 -bottom-4 text-slate-50 text-6xl font-black italic select-none group-hover:text-slate-100 transition-colors">
+              <span className="absolute -right-4 -bottom-4 text-slate-50 text-6xl font-black  select-none group-hover:text-slate-100 transition-colors">
                 {n.id.split('/').pop()}
               </span>
             </div>
@@ -130,7 +130,7 @@ const CircularPage = () => {
 
         {/* LOAD MORE */}
         <div className="mt-16 text-center">
-          <button className="text-slate-400 font-bold text-xs uppercase tracking-[0.3em] hover:text-blue-600 transition-all flex items-center gap-2 mx-auto">
+          <button className="text-slate-400 font-bold text-xs uppercase  hover:text-blue-600 transition-all flex items-center gap-2 mx-auto">
             View Older Circulars <ChevronRight size={16} />
           </button>
         </div>

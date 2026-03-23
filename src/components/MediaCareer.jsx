@@ -12,7 +12,7 @@ const MediaCareer = () => {
             <div className="p-3 bg-white rounded-xl text-blue-600 shadow-sm"><Briefcase /></div>
             <h3 className="text-xl font-bold uppercase">Career Opportunities</h3>
           </div>
-          <p className="text-slate-600 text-sm mb-6 font-light italic">Join the fastest growing textile e-trade platform in Hyderabad. We are hiring for Sales & Tech.</p>
+          <p className="text-slate-600 text-sm mb-6 font-light ">Join the fastest growing textile e-trade platform in Hyderabad. We are hiring for Sales & Tech.</p>
           <button className="text-blue-600 font-bold text-sm flex items-center gap-2 group-hover:gap-4 transition-all">
             Browse Jobs <span className="text-xl">→</span>
           </button>

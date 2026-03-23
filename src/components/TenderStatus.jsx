@@ -10,7 +10,7 @@ const TenderWorking = () => {
   return (
     <div className="bg-slate-900 text-white p-10 rounded-[40px] shadow-2xl overflow-hidden relative">
       <div className="relative z-10">
-        <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 italic">
+        <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 ">
           <CheckCircle className="text-blue-400" /> Active Tender Desk
         </h3>
         

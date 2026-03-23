@@ -32,7 +32,7 @@ const TradeOps = () => {
                 <Gavel size={28} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 italic">Live e-Auction</h3>
+                <h3 className="text-2xl font-bold text-slate-900 ">Live e-Auction</h3>
                 <p className="text-xs text-slate-500 uppercase tracking-widest font-semibold">Real-time Bidding</p>
               </div>
             </div>
@@ -82,7 +82,7 @@ const TradeOps = () => {
                 <FileText size={28} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white italic">Tender & Contracts</h3>
+                <h3 className="text-2xl font-bold text-white ">Tender & Contracts</h3>
                 <p className="text-xs text-blue-400 uppercase tracking-widest font-semibold">Verified Opportunities</p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const TradeOps = () => {
               <div className="p-6 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition-all flex justify-between items-center group/item cursor-pointer">
                 <div>
                   <h4 className="text-white font-semibold">Indian Railways Uniform Fabric 2026</h4>
-                  <p className="text-xs text-slate-500 mt-1 italic italic">Value: ₹1.2 Cr | Status: Open</p>
+                  <p className="text-xs text-slate-500 mt-1  ">Value: ₹1.2 Cr | Status: Open</p>
                 </div>
                 <div className="p-2 bg-white/10 rounded-full group-hover/item:bg-blue-600 transition-all">
                   <ArrowUpRight size={20} className="text-white" />
@@ -105,7 +105,7 @@ const TradeOps = () => {
               <div className="p-6 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition-all flex justify-between items-center group/item cursor-pointer">
                 <div>
                   <h4 className="text-white font-semibold">Technical Textile Export Contract (Germany)</h4>
-                  <p className="text-xs text-slate-500 mt-1 italic">Value: Private | Status: Under Review</p>
+                  <p className="text-xs text-slate-500 mt-1 ">Value: Private | Status: Under Review</p>
                 </div>
                 <div className="p-2 bg-white/10 rounded-full group-hover/item:bg-blue-600 transition-all">
                   <ArrowUpRight size={20} className="text-white" />

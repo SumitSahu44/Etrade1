@@ -31,12 +31,12 @@ const Hero = () => {
       {/* --- CONTENT --- */}
       <div className="relative z-10 max-w-5xl px-6 mt-10">
         <div className="inline-block px-4 py-1.5 mb-6 border border-blue-500/30 bg-blue-500/10 rounded-full">
-          <span className="text-blue-400 text-[10px] font-black uppercase tracking-[0.3em]">
+          <span className="text-blue-400 text-[10px] font-black uppercase ">
             India's Digital Textile Hub
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-8xl font-black text-white italic leading-[1.1] uppercase tracking-tighter">
+        <h1 className="text-5xl md:text-8xl font-black text-white  leading-[1.1] uppercase ">
           Parekh <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">e-Trade</span> <br /> 
           Market
         </h1>

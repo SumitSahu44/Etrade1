@@ -180,7 +180,7 @@ const TradeEnquiryForm = () => {
 
               <div className="border-t pt-4">
                 <h4 className="text-slate-500 uppercase font-bold text-xs mb-2">Item Description</h4>
-                <p className="text-slate-700 bg-slate-50 p-4 rounded-xl italic">
+                <p className="text-slate-700 bg-slate-50 p-4 rounded-xl ">
                   {formData.description || 'No description provided.'}
                 </p>
               </div>

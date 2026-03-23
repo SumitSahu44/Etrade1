@@ -17,7 +17,7 @@ const AppointmentForm = () => {
           <div className="w-24 h-24 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle2 size={48} />
           </div>
-          <h2 className="text-4xl font-black text-slate-900 mb-4 italic">Request Received!</h2>
+          <h2 className="text-4xl font-black text-slate-900 mb-4 ">Request Received!</h2>
           <p className="text-slate-500 max-w-sm mx-auto mb-8 font-medium">
             Sunil Parekh's office will review your request and confirm the slot via email within 2 hours.
           </p>
@@ -41,8 +41,8 @@ const AppointmentForm = () => {
           {/* LEFT: Office Info (5 Columns) */}
           <div className="lg:col-span-5 space-y-8">
             <div>
-              <span className="text-blue-600 font-black text-[10px] tracking-[0.3em] uppercase mb-4 block">Visit Registration</span>
-              <h1 className="text-5xl font-black text-slate-900 leading-tight italic tracking-tighter">
+              <span className="text-blue-600 font-black text-[10px]  uppercase mb-4 block">Visit Registration</span>
+              <h1 className="text-5xl font-black text-slate-900 leading-tight  ">
                 Schedule <br /> <span className="text-blue-600">Executive</span> Visit.
               </h1>
               <p className="text-slate-500 mt-6 text-lg leading-relaxed">
@@ -66,7 +66,7 @@ const AppointmentForm = () => {
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold italic">Reception Desk</h4>
+                  <h4 className="font-bold ">Reception Desk</h4>
                   <p className="text-sm text-slate-400 leading-relaxed">+91 40 1234 5678 <br />support@parekhetrade.com</p>
                 </div>
               </div>
@@ -158,8 +158,8 @@ const AppointmentForm = () => {
         {/* TRUST BANNER */}
         <div className="mt-20 flex flex-wrap justify-center gap-12 grayscale opacity-40">
            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/ISO_Logo_%28Redesign%29.svg" className="h-12" alt="ISO" />
-           <p className="text-xl font-black italic text-slate-400">MADE IN INDIA</p>
-           <p className="text-xl font-black italic text-slate-400">HYDERABAD TEXTILE HUB</p>
+           <p className="text-xl font-black  text-slate-400">MADE IN INDIA</p>
+           <p className="text-xl font-black  text-slate-400">HYDERABAD TEXTILE HUB</p>
         </div>
 
       </div>

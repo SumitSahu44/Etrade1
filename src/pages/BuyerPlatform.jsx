@@ -27,7 +27,7 @@ const BuyerPlatform = () => {
           <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-full text-[12px] font-black tracking-[0.2em] uppercase mb-6 shadow-lg shadow-blue-200">
             <ShieldCheck size={14} /> Official Buyer Gateway
           </div>
-          <h1 className="text-5xl md:text-6xl font-black text-slate-900 italic tracking-tighter uppercase leading-none">
+          <h1 className="text-5xl md:text-6xl font-black text-slate-900   uppercase leading-none">
             Buyer <span className="text-blue-600">Platform.</span>
           </h1>
           <p className="text-slate-600 mt-4 font-bold text-xs uppercase tracking-widest">
@@ -41,7 +41,7 @@ const BuyerPlatform = () => {
             <div className="w-20 h-20 bg-slate-50 text-blue-600 rounded-[2rem] flex items-center justify-center mx-auto mb-8 border border-slate-100">
               <Lock size={32} />
             </div>
-            <h3 className="text-2xl font-black text-slate-900 mb-2 italic">Access Restricted</h3>
+            <h3 className="text-2xl font-black text-slate-900 mb-2 ">Access Restricted</h3>
             <p className="text-slate-600 text-sm mb-10 font-medium">Please enter Associate Credentials to unlock the Buyer Form.</p>
 
             <div className="space-y-6 text-left mb-10">
@@ -84,7 +84,7 @@ const BuyerPlatform = () => {
                 <CheckCircle size={24} />
                 <p className="text-[11px] font-black uppercase tracking-widest">Verified Associate: {authData.name} | ID: {authData.code}</p>
               </div>
-              <span className="text-[12px] font-bold opacity-80 uppercase tracking-tighter">Session Active</span>
+              <span className="text-[12px] font-bold opacity-80 uppercase ">Session Active</span>
             </div>
 
             <form className="space-y-12">
@@ -94,7 +94,7 @@ const BuyerPlatform = () => {
                 <div className="flex justify-between items-center border-b border-slate-50 pb-8">
                   <div>
                     <h4 className="text-[12px] font-black text-blue-600 uppercase tracking-[0.4em] mb-2">Part A</h4>
-                    <h3 className="text-3xl font-black text-slate-900 italic tracking-tighter uppercase">Business <span className="text-blue-600">Identity</span></h3>
+                    <h3 className="text-3xl font-black text-slate-900   uppercase">Business <span className="text-blue-600">Identity</span></h3>
                   </div>
                 </div>
                 
@@ -179,14 +179,14 @@ const BuyerPlatform = () => {
               <div className="bg-white p-10 md:p-14 rounded-[3.5rem] shadow-sm border border-slate-100 space-y-10">
                 <div className="border-b border-slate-50 pb-8">
                   <h4 className="text-[12px] font-black text-blue-600 uppercase tracking-[0.4em] mb-2">Part B</h4>
-                  <h3 className="text-3xl font-black text-slate-900 italic tracking-tighter uppercase">Procurement <span className="text-blue-600">Details</span></h3>
+                  <h3 className="text-3xl font-black text-slate-900   uppercase">Procurement <span className="text-blue-600">Details</span></h3>
                 </div>
 
                 <div className="space-y-8">
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {['Raw Materials', 'Finished Goods', 'Machineries', 'Spares'].map((cat) => (
                       <div key={cat} className="p-4 bg-slate-50 border border-transparent rounded-2xl hover:border-blue-200 hover:bg-blue-50 cursor-pointer transition-all text-center">
-                        <p className="text-[12px] font-black text-slate-600 uppercase tracking-tighter">{cat}</p>
+                        <p className="text-[12px] font-black text-slate-600 uppercase ">{cat}</p>
                       </div>
                     ))}
                   </div>
@@ -218,7 +218,7 @@ const BuyerPlatform = () => {
                 <button type="button" className="flex-1 bg-white border-2 border-slate-900 py-6 rounded-3xl font-black text-[12px] uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center justify-center gap-3">
                   <Eye size={20} /> Preview Submission
                 </button>
-                <button type="submit" className="flex-[2] bg-blue-600 text-white py-6 rounded-3xl font-black text-[12px] uppercase tracking-[0.3em] shadow-2xl shadow-blue-500/30 hover:bg-slate-900 transition-all flex items-center justify-center gap-3">
+                <button type="submit" className="flex-[2] bg-blue-600 text-white py-6 rounded-3xl font-black text-[12px] uppercase  shadow-2xl shadow-blue-500/30 hover:bg-slate-900 transition-all flex items-center justify-center gap-3">
                   Confirm & Submit To Webmail <Send size={20} />
                 </button>
               </div>

@@ -21,7 +21,7 @@ const IndiaMap = () => {
               <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase mb-6 border border-blue-100">
                 <Globe size={14} /> National Presence
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight tracking-tighter uppercase italic">
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight  uppercase ">
                 Our Textile <span className="text-blue-600">Associates.</span>
               </h2>
               <p className="text-slate-500 mt-4 text-lg font-medium max-w-lg">
@@ -72,7 +72,7 @@ const IndiaMap = () => {
 
               {/* Floating Badge on Map */}
               <div className="absolute -bottom-4 -right-4 bg-slate-900 text-white p-6 rounded-[2rem] shadow-xl">
-                 <p className="text-2xl font-black italic leading-none">500+</p>
+                 <p className="text-2xl font-black  leading-none">500+</p>
                  <p className="text-[8px] font-bold text-blue-400 uppercase tracking-widest mt-1">Associates</p>
               </div>
             </div>

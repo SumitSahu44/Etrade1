@@ -7,7 +7,7 @@ const TradeEnquiry = () => {
       <div className="max-w-4xl mx-auto bg-slate-900 rounded-[3rem] p-10 md:p-16 shadow-2xl relative overflow-hidden">
         <div className="relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 italic">Quick Trade Enquiry</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 ">Quick Trade Enquiry</h2>
             <p className="text-slate-400">Hume bataye aapko kya chahiye, hamari team 24 ghante mein contact karegi.</p>
           </div>
 

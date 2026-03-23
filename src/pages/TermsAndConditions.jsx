@@ -26,7 +26,7 @@ const TermsPage = () => {
     <div className="bg-slate-50 font-['Poppins'] min-h-screen">
       {/* Top Hero Banner */}
       <div className="bg-slate-900 py-16 px-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 italic">Parekh e-Trade Legal Center</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 ">Parekh e-Trade Legal Center</h1>
         <p className="text-slate-400 text-sm">Last Updated: March 2026</p>
       </div>
 
@@ -145,7 +145,7 @@ const TermsPage = () => {
                 <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center font-bold text-xl">05</div>
                 <h2 className="text-2xl font-bold text-slate-900">Limitation of Liability</h2>
               </div>
-              <p className="text-slate-600 leading-relaxed italic text-sm md:text-base">
+              <p className="text-slate-600 leading-relaxed  text-sm md:text-base">
                 Parekh e-Trade sirf ek facilitator hai. Kisi bhi quality dispute ya payment delay ke liye Buyers aur Sellers aapas mein legally deal karenge.
               </p>
             </section>

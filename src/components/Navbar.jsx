@@ -53,7 +53,7 @@ const Navbar = () => {
   };
 
   const getLinkStyle = (isActive) => `
-    flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] transition-all duration-300
+    flex items-center gap-2 text-[12px] font-black uppercase tracking-[0.2em] transition-all duration-300
     ${isActive ? 'text-blue-500' : scrolled ? 'text-slate-900 hover:text-blue-600' : 'text-white hover:text-blue-400'}
   `;
 
@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         
         {/* Logo - Points to Home */}
-        <NavLink to="/" className={`text-xl font-black italic tracking-tighter transition-colors flex items-center gap-1 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
+        <NavLink to="/" className={`text-xl font-black   transition-colors flex items-center gap-1 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
           PAREKH<span className="text-blue-500">E-TRADE</span>
         </NavLink>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
               <div className="absolute top-full pt-4 -left-6 w-60 animate-in fade-in slide-in-from-top-2">
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.company.map((item) => (
-                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase tracking-wider">
+                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[13px] uppercase ">
                       <item.icon size={15} className="text-blue-500" /> {item.name}
                     </NavLink>
                   ))}
@@ -101,7 +101,7 @@ const Navbar = () => {
               <div className="absolute top-full pt-4 -left-6 w-64 animate-in fade-in slide-in-from-top-2">
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.trade.map((item) => (
-                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase tracking-wider">
+                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[12px] uppercase ">
                       <item.icon size={15} className="text-blue-500" /> {item.name}
                     </NavLink>
                   ))}
@@ -119,7 +119,7 @@ const Navbar = () => {
               <div className="absolute top-full pt-4 -left-6 w-64 animate-in fade-in slide-in-from-top-2">
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.resources.map((item) => (
-                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase tracking-wider">
+                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase ">
                       <item.icon size={15} className="text-blue-500" /> {item.name}
                     </NavLink>
                   ))}
@@ -131,7 +131,7 @@ const Navbar = () => {
           <NavLink to="/contact" className={({ isActive }) => getLinkStyle(isActive)}>CONTACT</NavLink>
 
           {/* Primary CTA */}
-          <NavLink to="/trade-enquiry" className="bg-blue-600 text-white px-8 py-3.5 rounded-full text-[10px] font-black hover:bg-slate-900 transition-all shadow-lg shadow-blue-500/30 tracking-widest uppercase">
+          <NavLink to="/trade-enquiry" className="bg-blue-600 text-white px-8 py-3.5 rounded-full text-[12px] font-black hover:bg-slate-900 transition-all shadow-lg shadow-blue-500/30 tracking-widest uppercase">
             TRADE ENQUIRY
           </NavLink>
         </div>
@@ -151,7 +151,7 @@ const Navbar = () => {
               <p className="text-[11px] font-black text-blue-600 tracking-[0.2em] uppercase underline underline-offset-4 decoration-blue-100">{key}</p>
               <div className="grid grid-cols-1 gap-3 pl-2">
                 {items.map(item => (
-                  <NavLink key={item.name} to={item.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-[10px] font-bold text-slate-700 uppercase">
+                  <NavLink key={item.name} to={item.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-[12px] font-bold text-slate-700 uppercase">
                     <item.icon size={14} className="text-blue-500" /> {item.name}
                   </NavLink>
                 ))}

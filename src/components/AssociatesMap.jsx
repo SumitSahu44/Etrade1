@@ -6,7 +6,7 @@ const AssociatesMap = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-4xl font-bold text-slate-900 mb-6 italic">Our Textile Associates</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-6 ">Our Textile Associates</h2>
           <p className="text-gray-600 mb-8 leading-relaxed">
             Humara network poore India mein faila hua hai. Gujarat ke cotton mills se lekar Tamil Nadu ke spinning units tak, hum sabhi major textile hubs se jude hain.
           </p>

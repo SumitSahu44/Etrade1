@@ -13,8 +13,8 @@ const PlatformForms = () => {
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="col-span-full bg-blue-50 p-4 rounded-xl flex flex-wrap justify-between gap-4 border border-blue-100">
-          <span className="text-sm font-bold text-blue-800 uppercase tracking-tighter">Authorized Official: Sunil Parekh</span>
-          <span className="text-sm font-bold text-blue-800 tracking-tighter uppercase">Code No: PT-TRADE-2026</span>
+          <span className="text-sm font-bold text-blue-800 uppercase ">Authorized Official: Sunil Parekh</span>
+          <span className="text-sm font-bold text-blue-800  uppercase">Code No: PT-TRADE-2026</span>
         </div>
 
         <div className="flex flex-col gap-1">
@@ -56,7 +56,7 @@ const PlatformForms = () => {
       </div>
 
       <div className="mt-8">
-        <label className="text-xs font-bold text-slate-500 ml-1 mb-3 block italic uppercase">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
+        <label className="text-xs font-bold text-slate-500 ml-1 mb-3 block  uppercase">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
         <div className="border-2 border-dashed border-slate-200 rounded-[2rem] p-8 flex flex-col items-center justify-center text-slate-400 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
           <Upload size={32} className="mb-2 text-blue-600" />
           <p className="text-sm font-medium">Click to upload required business documents</p>
@@ -76,7 +76,7 @@ const PlatformForms = () => {
         </div>
 
         <div className="p-8 md:p-12">
-          <h2 className="text-2xl font-bold text-slate-900 mb-8 border-l-8 border-blue-600 pl-4 italic uppercase tracking-tighter">
+          <h2 className="text-2xl font-bold text-slate-900 mb-8 border-l-8 border-blue-600 pl-4  uppercase ">
             {activeTab} Registration
           </h2>
 
@@ -86,7 +86,7 @@ const PlatformForms = () => {
             {/* Textile Items Form Section */}
             <div className="bg-slate-900 rounded-[2.5rem] p-8 md:p-10 text-white relative overflow-hidden">
                <div className="relative z-10">
-                <h3 className="text-xl font-bold mb-8 flex items-center gap-3 italic">
+                <h3 className="text-xl font-bold mb-8 flex items-center gap-3 ">
                   <CheckCircle2 className="text-blue-400" /> Textile Items To {activeTab === 'buyer' ? 'Buy' : 'Sell'}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -133,7 +133,7 @@ const PlatformForms = () => {
           <div className="bg-white w-full max-w-2xl rounded-[3rem] p-8 md:p-12 relative max-h-[90vh] overflow-y-auto shadow-2xl">
             <button onClick={() => setShowPreview(false)} className="absolute top-8 right-8 text-slate-400 hover:text-slate-900 transition-colors"><X size={24} /></button>
             
-            <h3 className="text-3xl font-black italic mb-8 border-b-4 border-blue-600 pb-2 inline-block">Final Review</h3>
+            <h3 className="text-3xl font-black  mb-8 border-b-4 border-blue-600 pb-2 inline-block">Final Review</h3>
             
             <div className="space-y-6 mt-4">
               <div className="grid grid-cols-2 gap-y-4 text-sm">
@@ -152,7 +152,7 @@ const PlatformForms = () => {
 
               <div className="bg-slate-100 p-6 rounded-3xl border border-slate-200 mt-6">
                 <p className="text-[10px] font-black text-slate-400 uppercase mb-2">Item Description</p>
-                <p className="text-sm italic">"{formData.desc || 'No description provided.'}"</p>
+                <p className="text-sm ">"{formData.desc || 'No description provided.'}"</p>
               </div>
 
               <div className="flex gap-4 mt-8">

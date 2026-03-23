@@ -77,7 +77,7 @@ const MediaGallery = () => {
             <ImageIcon size={24} />
             <span className="text-[10px] font-black tracking-[.3em] uppercase text-slate-400">Visual Journey</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-black text-slate-900 italic tracking-tighter leading-none">
+          <h1 className="text-5xl md:text-6xl font-black text-slate-900   leading-none">
             Media <span className="text-blue-600">Gallery.</span>
           </h1>
           <p className="text-slate-500 mt-6 text-lg font-medium leading-relaxed">
@@ -155,7 +155,7 @@ const MediaGallery = () => {
         {/* CTA SECTION */}
         <div className="mt-24 p-12 bg-slate-50 rounded-[3rem] border border-slate-100 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <h4 className="text-2xl font-black text-slate-900 italic tracking-tighter">Are you a Media House?</h4>
+            <h4 className="text-2xl font-black text-slate-900  ">Are you a Media House?</h4>
             <p className="text-slate-500 font-medium mt-1">Download our official Brand Kit and Press Assets.</p>
           </div>
           <button className="bg-slate-900 text-white px-10 py-4 rounded-2xl font-black text-[10px] uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl flex items-center gap-3">

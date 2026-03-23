@@ -28,8 +28,8 @@ const CareerPage = () => {
               <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase mb-6">
                 <Users size={14} /> We are hiring
               </div>
-              <h1 className="text-5xl md:text-6xl font-black text-slate-900 leading-[1.1] mb-6 tracking-tighter">
-                Grow your <span className="text-blue-600 italic underline decoration-blue-200 underline-offset-8">Textile Career</span> with us.
+              <h1 className="text-5xl md:text-6xl font-black text-slate-900 leading-[1.1] mb-6 ">
+                Grow your <span className="text-blue-600  underline decoration-blue-200 underline-offset-8">Textile Career</span> with us.
               </h1>
               <p className="text-slate-500 text-lg max-w-lg mb-8">
                 Join Hyderabad's fastest-growing digital textile bridge. We value tradition, powered by technology.
@@ -91,7 +91,7 @@ const CareerPage = () => {
                 <X size={28} />
               </button>
               <p className="text-blue-400 text-[10px] font-black uppercase tracking-widest mb-2">Application Form</p>
-              <h2 className="text-3xl font-bold italic">{selectedJob?.title}</h2>
+              <h2 className="text-3xl font-bold ">{selectedJob?.title}</h2>
               <p className="text-slate-400 text-sm mt-1">{selectedJob?.location} • {selectedJob?.dept}</p>
             </div>
 
@@ -135,7 +135,7 @@ const CareerPage = () => {
       <div className="max-w-7xl mx-auto px-6 pb-20">
         <div className="bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 blur-[100px] opacity-20"></div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight italic">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight ">
             Don't see a <span className="text-blue-500">perfect fit?</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto mb-10">

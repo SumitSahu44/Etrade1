@@ -38,8 +38,8 @@ const ServicesForms = () => {
           <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200">
             <h4 className="font-bold flex items-center gap-2 mb-4"><ClipboardList className="text-blue-600" /> Circulars</h4>
             <div className="space-y-3">
-              <p className="text-xs text-slate-500 border-b pb-2 hover:text-blue-600 cursor-pointer italic">● New GST Rules for Textile e-Trade 2026</p>
-              <p className="text-xs text-slate-500 border-b pb-2 hover:text-blue-600 cursor-pointer italic">● Cotton Price Update - Hyderabad Market</p>
+              <p className="text-xs text-slate-500 border-b pb-2 hover:text-blue-600 cursor-pointer ">● New GST Rules for Textile e-Trade 2026</p>
+              <p className="text-xs text-slate-500 border-b pb-2 hover:text-blue-600 cursor-pointer ">● Cotton Price Update - Hyderabad Market</p>
             </div>
           </div>
         </div>

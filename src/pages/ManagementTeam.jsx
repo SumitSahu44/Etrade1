@@ -65,7 +65,7 @@ const ManagementTeam = () => {
                 {/* Content */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold text-slate-900 mb-1">{member.name}</h4>
-                  <p className="text-blue-600 font-medium text-sm uppercase tracking-wider mb-4">{member.role}</p>
+                  <p className="text-blue-600 font-medium text-sm uppercase  mb-4">{member.role}</p>
                   <p className="text-slate-500 text-sm leading-relaxed mb-6">
                     {member.desc}
                   </p>
@@ -87,7 +87,7 @@ const ManagementTeam = () => {
 
         {/* Professional Footer for Team Section */}
         <div className="mt-20 text-center p-10 bg-white rounded-3xl border border-dashed border-slate-300">
-           <p className="text-slate-600 italic">
+           <p className="text-slate-600 ">
              "Our team combines decades of textile tradition with cutting-edge digital innovation."
            </p>
            <button className="mt-4 text-blue-600 font-bold hover:underline">Join our team →</button>
