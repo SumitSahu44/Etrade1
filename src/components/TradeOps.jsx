@@ -59,7 +59,7 @@ const TradeOps = () => {
                   </div>
                   <div className="text-right">
                     <p className="text-lg font-black text-slate-900">{item.currentBid}</p>
-                    <button className="text-[10px] font-bold text-blue-600 uppercase border-b border-blue-600 group-hover:border-b-2">Place Bid</button>
+                    <button className="text-[10px] font-bold text-blue-600 uppercase border-b border-blue-600 group-hover:border-b-2 transition-all">Place Bid</button>
                   </div>
                 </div>
               </div>
@@ -88,14 +88,14 @@ const TradeOps = () => {
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed mb-8">
-              B2B bulk supply contracts aur industrial tenders. Sirf verified members hi apply kar sakte hain.
+              Access high-value B2B bulk supply contracts and industrial tenders. Participation is strictly reserved for verified members only.
             </p>
 
             <div className="space-y-4">
               <div className="p-6 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition-all flex justify-between items-center group/item cursor-pointer">
                 <div>
                   <h4 className="text-white font-semibold">Indian Railways Uniform Fabric 2026</h4>
-                  <p className="text-xs text-slate-500 mt-1  ">Value: ₹1.2 Cr | Status: Open</p>
+                  <p className="text-xs text-slate-500 mt-1">Value: ₹1.2 Cr | Status: Open for Bidding</p>
                 </div>
                 <div className="p-2 bg-white/10 rounded-full group-hover/item:bg-blue-600 transition-all">
                   <ArrowUpRight size={20} className="text-white" />
@@ -105,7 +105,7 @@ const TradeOps = () => {
               <div className="p-6 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition-all flex justify-between items-center group/item cursor-pointer">
                 <div>
                   <h4 className="text-white font-semibold">Technical Textile Export Contract (Germany)</h4>
-                  <p className="text-xs text-slate-500 mt-1 ">Value: Private | Status: Under Review</p>
+                  <p className="text-xs text-slate-500 mt-1">Value: Private | Status: Under Review</p>
                 </div>
                 <div className="p-2 bg-white/10 rounded-full group-hover/item:bg-blue-600 transition-all">
                   <ArrowUpRight size={20} className="text-white" />

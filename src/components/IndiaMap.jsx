@@ -21,11 +21,11 @@ const IndiaMap = () => {
               <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase mb-6 border border-blue-100">
                 <Globe size={14} /> National Presence
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight  uppercase ">
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight uppercase ">
                 Our Textile <span className="text-blue-600">Associates.</span>
               </h2>
               <p className="text-slate-500 mt-4 text-lg font-medium max-w-lg">
-                India ke top textile hubs ka digital integration, direct sourcing ke liye.
+                Digital integration of India's leading textile hubs for streamlined direct sourcing.
               </p>
             </div>
 
@@ -53,26 +53,24 @@ const IndiaMap = () => {
             </div>
           </div>
 
-          {/* RIGHT SIDE: SMALLER, CLEAN MAP (5 Columns) */}
+          {/* RIGHT SIDE: MAP (5 Columns) */}
           <div className="lg:col-span-5 relative flex justify-center">
             {/* Soft Glow behind map */}
             <div className="absolute inset-0 bg-blue-400/10 blur-[100px] rounded-full scale-75"></div>
             
             <div className="relative bg-white p-6 rounded-[3rem] shadow-2xl shadow-slate-200 border border-white max-w-[450px] group">
-              {/* Map Image with controlled size */}
               <div className="rounded-[2.5rem] overflow-hidden bg-slate-50 flex items-center justify-center p-4">
                 <img 
                   src="/3dmap.png" 
                   alt="India Map" 
                   className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
-                  // Placeholder for dev
                   onError={(e) => { e.target.src = "https://via.placeholder.com/400x500?text=India+Map+Image"; }}
                 />
               </div>
 
               {/* Floating Badge on Map */}
               <div className="absolute -bottom-4 -right-4 bg-slate-900 text-white p-6 rounded-[2rem] shadow-xl">
-                 <p className="text-2xl font-black  leading-none">500+</p>
+                 <p className="text-2xl font-black leading-none">500+</p>
                  <p className="text-[8px] font-bold text-blue-400 uppercase tracking-widest mt-1">Associates</p>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Filter, Search, ArrowRight, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const products = [
   { id: 1, name: 'Premium Cotton Fiber', category: 'Raw Material', img: 'https://images.unsplash.com/photo-1534639077088-d702bcf685e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGV4dGlsZXxlbnwwfHwwfHx8MA%3D%3D', specs: 'Shankar-6, 28mm-30mm' },
@@ -82,9 +83,9 @@ const ProductServicePage = () => {
                 <p className="text-sm text-slate-500 mb-6 ">{product.specs}</p>
                 
                 <div className="flex items-center justify-between pt-4 border-t border-slate-50">
-                  <button className="flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all">
+                  <Link to={`/BuyerPlatform`} className="flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all">
                     Get Best Quote <ArrowRight size={16} />
-                  </button>
+                  </Link>
                   <button className="p-2 bg-slate-100 rounded-full text-slate-600 hover:bg-blue-600 hover:text-white transition-colors" title="Inquire on WhatsApp">
                     <MessageSquare size={18} />
                   </button>

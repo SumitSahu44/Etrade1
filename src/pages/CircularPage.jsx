@@ -61,14 +61,14 @@ const CircularPage = () => {
           </div>
 
           <div className="w-full md:w-80">
-            <div className="relative group">
+            {/* <div className="relative group">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-blue-600 transition-colors" size={20} />
               <input 
                 type="text" 
                 placeholder="Search circular ID or title..." 
                 className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-2 focus:ring-blue-600 outline-none transition-all font-medium text-sm shadow-sm"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 

@@ -41,6 +41,7 @@ const Navbar = () => {
       { name: 'Buyer Platform', path: '/BuyerPlatform', icon: Globe },
       { name: 'Seller Platform', path: '/SellerPlatform', icon: Handshake },
       { name: 'e-Auction', path: '/e-auction', icon: Gavel },
+      { name: 'Tender & Contract', path: '/TenderPortal', icon: Calendar },
       { name: 'e-Quotation', path: '/e-quotation', icon: FileText },
     ],
     resources: [

@@ -23,6 +23,9 @@ import TextileAssociates from './pages/TextileAssociates';
 import BuyerPlatform from './pages/BuyerPlatform';
 import SellerPlatform from './pages/SellerPlatform';
 import ScrollToTop from './components/ScrollToTop';
+import TenderPortal from './pages/TenderPortal';
+
+
 function App() {
   return (
     <Router>
@@ -44,13 +47,14 @@ function App() {
             <Route path="/e-auction" element={<div className="pt-24 max-w-7xl mx-auto px-6"><EAuction /></div>} />
             <Route path="/e-quotation" element={<div className="pt-24 max-w-7xl mx-auto px-6"><EQuotation /></div>} />
             <Route path="/trade-enquiry" element={<div className="pt-24 max-w-7xl mx-auto px-6"><TradeEnquiryForm /></div>} />  
-            <Route path="/terms" element={<div className="pt-24 max-w-7xl mx-auto px-6"><TermsAndConditions /></div>} />
+            <Route path="/terms" element={<div className=""><TermsAndConditions /></div>} />
             <Route path="/products-services" element={<div className="pt-24 max-w-7xl mx-auto px-6"><ProductServicePage /></div>} />
             <Route path="/career" element={<div className="pt-24 max-w-7xl mx-auto px-6"><CareerPage /></div>} /> 
            <Route path="/Blog" element={<div className="pt-24 max-w-7xl mx-auto px-6"><BlogPage /></div>} />  
            <Route path="/Media" element={<div className="pt-24 max-w-7xl mx-auto px-6"><MediaPage /></div>} />  
            <Route path="/BuyerPlatform" element={<div className="pt-24 max-w-7xl mx-auto px-6"><BuyerPlatform /></div>} />
           <Route path="/SellerPlatform" element={<div className="pt-24 max-w-7xl mx-auto px-6"><SellerPlatform /></div>} /> 
+          <Route path="/TenderPortal" element={<div className=""><TenderPortal /></div>} />
            <Route path="/TextileAssociates" element={<div className="pt-24 max-w-7xl mx-auto px-6"><TextileAssociates /></div>} />
           </Routes>
 
