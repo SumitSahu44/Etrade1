@@ -48,7 +48,7 @@ const Hero = () => {
 
         <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
           <button 
-            onClick={() => navigate('/register')} 
+            onClick={() => navigate('/BuyerPlatform')} 
             className="group relative bg-blue-600 text-white px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-xs shadow-2xl shadow-blue-500/40 hover:bg-blue-700 transition-all overflow-hidden"
           >
             <span className="relative z-10">Start Trading</span>
