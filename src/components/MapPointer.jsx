@@ -98,7 +98,7 @@ function Pin({ loc, index, active, onClick }) {
           x={textX}
           y={loc.subtitle ? labelY + 14 : labelY + 17}
           textAnchor={textAnchor}
-          fontSize={loc.subtitle ? "12" : "13"}
+          fontSize={loc.subtitle ? "12" : "15"}
           fontWeight="700"
           fill="#f7e8d0"
           letterSpacing="0.03em"
@@ -140,55 +140,74 @@ export default function MapPointerPolished() {
       }}
     >
       {/* Header */}
-      <div
+    <div
+  style={{
+    background: "linear-gradient(135deg, #5a1a1a 0%, #3d0e0e 100%)",
+    color: "#f7e8d0",
+    padding: "14px 24px",
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    overflowX: "auto",       // ✅ horizontal scroll
+  }}
+>
+  <svg width="22" height="26" viewBox="0 0 22 26" fill="none">
+    <path
+      d="M11 0C5.48 0 1 4.48 1 10C1 17.5 11 26 11 26C11 26 21 17.5 21 10C21 4.48 16.52 0 11 0Z"
+      fill="none"
+      stroke="#f7e8d0"
+      strokeWidth="1.5"
+    />
+    <circle cx="11" cy="10" r="4" fill="#f7e8d0" opacity="0.85" />
+  </svg>
+
+  <div style={{ whiteSpace: "nowrap" }}>
+    <div style={{ fontSize: "15px", fontWeight: "700", letterSpacing: "0.06em" }}>
+      PAREKH GROUP
+    </div>
+    <div
+      style={{
+        fontSize: "11px",
+        opacity: 0.7,
+        letterSpacing: "0.08em",
+        marginTop: "1px",
+      }}
+    >
+      STORE LOCATIONS
+    </div>
+  </div>
+
+  {/* Buttons wrapper */}
+  <div
+    style={{
+      marginLeft: "auto",
+      display: "flex",
+      gap: "8px",
+      whiteSpace: "nowrap",   // ✅ prevent wrap
+    }}
+  >
+    {locations.map((loc) => (
+      <button
+        key={loc.id}
+        onClick={() => handleClick(loc.id)}
         style={{
-          background: "linear-gradient(135deg, #5a1a1a 0%, #3d0e0e 100%)",
-          color: "#f7e8d0",
-          padding: "14px 24px",
-          display: "flex",
-          alignItems: "center",
-          gap: "12px",
+          flex: "0 0 auto",   // ✅ prevent shrinking
+          background: active === loc.id ? "#f7e8d0" : "rgba(247,232,208,0.15)",
+          color: active === loc.id ? "#5a1a1a" : "#f7e8d0",
+          border: "1px solid rgba(247,232,208,0.3)",
+          borderRadius: "20px",
+          padding: "4px 10px",
+          fontSize: "11px",
+          cursor: "pointer",
+          transition: "all 0.2s",
+          letterSpacing: "0.03em",
         }}
       >
-        <svg width="22" height="26" viewBox="0 0 22 26" fill="none">
-          <path
-            d="M11 0C5.48 0 1 4.48 1 10C1 17.5 11 26 11 26C11 26 21 17.5 21 10C21 4.48 16.52 0 11 0Z"
-            fill="none"
-            stroke="#f7e8d0"
-            strokeWidth="1.5"
-          />
-          <circle cx="11" cy="10" r="4" fill="#f7e8d0" opacity="0.85" />
-        </svg>
-        <div>
-          <div style={{ fontSize: "15px", fontWeight: "700", letterSpacing: "0.06em" }}>
-            PAREKH GROUP
-          </div>
-          <div style={{ fontSize: "11px", opacity: 0.7, letterSpacing: "0.08em", marginTop: "1px" }}>
-            STORE LOCATIONS
-          </div>
-        </div>
-        <div style={{ marginLeft: "auto", display: "flex", gap: "8px" }}>
-          {locations.map((loc) => (
-            <button
-              key={loc.id}
-              onClick={() => handleClick(loc.id)}
-              style={{
-                background: active === loc.id ? "#f7e8d0" : "rgba(247,232,208,0.15)",
-                color: active === loc.id ? "#5a1a1a" : "#f7e8d0",
-                border: "1px solid rgba(247,232,208,0.3)",
-                borderRadius: "20px",
-                padding: "4px 10px",
-                fontSize: "11px",
-                cursor: "pointer",
-                transition: "all 0.2s",
-                letterSpacing: "0.03em",
-              }}
-            >
-              {loc.short}
-            </button>
-          ))}
-        </div>
-      </div>
+        {loc.short}
+      </button>
+    ))}
+  </div>
+</div>
 
       {/* Map area */}
       <div style={{ position: "relative", width: "100%" }}>

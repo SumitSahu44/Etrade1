@@ -57,7 +57,7 @@ function App() {
           <Route path="/TenderPortal" element={<div className=""><TenderPortal /></div>} />
            <Route path="/TextileAssociates" element={<div className="pt-24 max-w-7xl mx-auto px-6"><TextileAssociates /></div>} />
          
-         <Route path="/MapPointer" element={<div className="pt-40 pb-40 max-w-7xl mx-auto px-6"><MapPointer /></div>} />
+         <Route path="/MapPointer" element={<div className="pt-40 pb-40 max-w-[700px] mx-auto px-6"><MapPointer /></div>} />
          
           </Routes>
 
