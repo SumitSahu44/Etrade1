@@ -37,6 +37,16 @@ const CircularPage = () => {
 
   const categories = ['All', 'Holidays', 'Regulatory', 'Corporate', 'Logistics'];
 
+  const renderE = (text) => {
+    const parts = text.split(/(e-)/i);
+    return parts.map((part, i) => {
+      if (part.toLowerCase() === 'e-') {
+        return <span key={i} className="lowercase">e-</span>;
+      }
+      return part;
+    });
+  };
+
   const filteredCirculars = activeTab === 'All' 
     ? circulars 
     : circulars.filter(c => c.category === activeTab);
@@ -84,7 +94,7 @@ const CircularPage = () => {
                 : 'bg-white border border-slate-100 text-slate-400 hover:text-slate-900 hover:border-slate-300'
               }`}
             >
-              {cat}
+              {renderE(cat)}
             </button>
           ))}
         </div>

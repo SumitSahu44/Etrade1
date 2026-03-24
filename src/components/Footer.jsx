@@ -7,14 +7,14 @@ const Footer = () => {
   return (
     <footer className="bg-[#0f172a] text-slate-300 pt-16 pb-8 px-6 font-['Poppins']">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
             <h3 className="text-white font-bold text-2xl tracking-tight">
-              PAREKH <span className="text-blue-500 font-light">e-TRADE</span>
+              PAREKH <span className="text-blue-500 font-light">e-Trade</span>
             </h3>
             <p className="text-sm leading-relaxed text-slate-400">
               Hyderabad's premier Textile e-Trade Platform. Connecting buyers and sellers for Raw Materials, Finished Goods, and Machineries with transparency and trust.
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Column 3: Specialized Services */}
           <div>
-            <h4 className="text-white font-semibold mb-6 uppercase text-xs tracking-[0.2em]">e-Trade Services</h4>
+            <h4 className="text-white font-semibold mb-6  text-xs tracking-[0.2em]">e-Trade Services</h4>
             <ul className="space-y-4 text-sm">
               {['Trade Enquiry', 'e-Quotation', 'e-Auction', 'Tender & Contract', 'Media Gallery', 'Visit with Appointment'].map((item) => (
                 <li key={item} className="cursor-pointer hover:text-blue-400 transition-colors">
@@ -79,13 +79,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest text-slate-500">
-          <p>© {currentYear} PAREKH E-TRADE MARKET. ALL RIGHTS RESERVED.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+        <div className="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-[11px]  tracking-widest text-slate-500">
+          <p>© {currentYear} PAREKH e-Trade MARKET. ALL RIGHTS RESERVED.</p>
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <span>SEO FRIENDLY</span>
             <span>MOBILE RESPONSIVE</span>
             <span>ALL BROWSER SUPPORT</span>
-          </div>
+          </div> */}
         </div>
 
       </div>

@@ -36,6 +36,16 @@ const TenderPortal = () => {
     }
   ];
 
+  const renderE = (text) => {
+    const parts = text.split(/(e-)/i);
+    return parts.map((part, i) => {
+      if (part.toLowerCase() === 'e-') {
+        return <span key={i} className="lowercase">e-</span>;
+      }
+      return part;
+    });
+  };
+
   return (
     <div className="bg-[#f8fafc] min-h-screen font-['Poppins']">
       
@@ -77,12 +87,12 @@ const TenderPortal = () => {
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-lg text-[10px] font-black uppercase  border border-blue-100">
-                        {tender.category}
+                        {renderE(tender.category)}
                       </span>
                       <span className="text-[10px] font-mono font-bold text-slate-400">ID: {tender.id}</span>
                     </div>
                     <h4 className="text-xl font-black text-slate-900 group-hover:text-blue-600 transition-colors uppercase leading-tight">
-                      {tender.title}
+                      {renderE(tender.title)}
                     </h4>
                     <div className="flex flex-wrap gap-6 items-center">
                       <div className="flex items-center gap-2 text-slate-500 text-xs font-bold">
@@ -177,7 +187,7 @@ const TenderPortal = () => {
 
       {/* FOOTER SUPPORT */}
       <div className="text-center py-20 border-t border-slate-100">
-        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.5em] mb-4">Parekh e-Trade Contract Management System</p>
+        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.5em] mb-4">Parekh <span className="lowercase">e-</span>Trade Contract Management System</p>
         <div className="flex justify-center gap-8">
            <a href="#" className="text-blue-600 font-bold text-xs uppercase hover:underline">Support Portal</a>
            <a href="#" className="text-blue-600 font-bold text-xs uppercase hover:underline">Legal Desk</a>

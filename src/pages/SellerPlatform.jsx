@@ -231,7 +231,7 @@ const SellerPlatform = () => {
 
               <div className="text-center pt-10 border-t border-slate-100">
                 <p className="text-[12px] font-black text-slate-600 uppercase tracking-[0.5em] mb-2">Seller Support Hub</p>
-                <a href="mailto:e-trade@parekhtrade.com" className="text-blue-600 font-bold hover:underline">e-trade@parekhtrade.com</a>
+                <a href="mailto:e-Trade@parekhtrade.com" className="text-blue-600 font-bold hover:underline">e-Trade@parekhtrade.com</a>
               </div>
             </form>
           </div>

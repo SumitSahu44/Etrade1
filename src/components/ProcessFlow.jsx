@@ -29,7 +29,7 @@ const ProcessFlow = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-slate-900 uppercase tracking-tight">How Parekh e-Trade Works</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 uppercase leading-tight">How Parekh <span className="lowercase">e-</span>Trade Works</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 

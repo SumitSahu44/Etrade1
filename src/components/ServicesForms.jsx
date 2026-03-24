@@ -20,7 +20,7 @@ const ServicesForms = () => {
               <option>Delivery Timeline: Within 15 Days</option>
               <option>Delivery Timeline: Monthly Contract</option>
             </select>
-            <button className="md:col-span-2 bg-slate-900 text-white font-bold py-4 rounded-2xl hover:bg-blue-600 transition-all uppercase tracking-widest text-xs">Generate e-Quotation</button>
+            <button className="md:col-span-2 bg-slate-900 text-white font-bold py-4 rounded-2xl hover:bg-blue-600 transition-all uppercase tracking-widest text-xs">Generate <span className="lowercase">e-</span>Quotation</button>
           </form>
         </div>
 

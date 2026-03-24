@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { 
-  Menu, X, ChevronDown, FileText, Gavel, ClipboardList, 
-  Users, Info, BookOpen, Briefcase, Bell, Image, MapPin, 
-  Calendar, ShieldCheck, ShoppingCart, Handshake, Globe 
+import {
+  Menu, X, ChevronDown, FileText, Gavel, ClipboardList,
+  Users, Info, BookOpen, Briefcase, Bell, Image, MapPin,
+  Calendar, ShieldCheck, ShoppingCart, Handshake, Globe
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
-    
+
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setActiveDropdown(null);
@@ -53,26 +53,37 @@ const Navbar = () => {
     ]
   };
 
+  const renderName = (name) => {
+    // Regex to find "e-" case-insensitively and replace with lowercase 'e-'
+    // We split the string by "e-" and wrap the 'e' in a lowercase span
+    const parts = name.split(/(e-)/i);
+    return parts.map((part, i) => {
+      if (part.toLowerCase() === 'e-') {
+        return <span key={i} className="lowercase text-inherit">e-</span>;
+      }
+      return part;
+    });
+  };
+
   const getLinkStyle = (isActive) => `
     flex items-center gap-2 text-[12px] font-black uppercase tracking-[0.2em] transition-all duration-300
     ${isActive ? 'text-blue-500' : scrolled ? 'text-slate-900 hover:text-blue-600' : 'text-slate-900 hover:text-blue-400'}
   `;
 
   return (
-    <nav className={`fixed top-8 left-1/2 -translate-x-1/2 w-[95%] lg:w-[88%] z-[1000] transition-all duration-500 rounded-full px-10 py-4 ${
-      scrolled 
-      ? 'bg-white/95 backdrop-blur-md shadow-2xl border border-slate-200/50 py-3.5' 
-      : 'bg-white/70 backdrop-blur-md border border-white/10 shadow-xl' 
-    }`}>
+    <nav className={`fixed top-8 left-1/2 -translate-x-1/2 w-[95%] lg:w-[88%] z-[1000] transition-all duration-500 rounded-full px-10 py-4 ${scrolled
+      ? 'bg-white/95 backdrop-blur-md shadow-2xl border border-slate-200/50 py-3.5'
+      : 'bg-white/70 backdrop-blur-md border border-white/10 shadow-xl'
+      }`}>
       <div className="flex justify-between items-center">
-        
+
         {/* Logo - Points to Home */}
-       {/* Logo - Points to Home */}
-     <NavLink to="/" className="flex items-center shrink-0">
-        <img 
-          src="/Parekh  e-Trade Market (Textile).png" 
-          alt="Parekh E-Trade Logo" 
-          className={`
+        {/* Logo - Points to Home */}
+        <NavLink to="/" className="flex items-center shrink-0">
+          <img
+            src="/Parekh  e-Trade Market (Textile).png"
+            alt="Parekh e-Trade Logo"
+            className={`
             transition-all duration-300 object-contain
             /* Mobile: Chota logo */
             h-4 
@@ -83,8 +94,8 @@ const Navbar = () => {
             /* Scroll hone par responsive adjustment */
             ${scrolled ? 'h-8 md:h-10 lg:h-12' : 'h-10 md:h-12 lg:h-14'}
           `}
-        />
-      </NavLink>
+          />
+        </NavLink>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-10" ref={dropdownRef}>
@@ -100,7 +111,7 @@ const Navbar = () => {
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.company.map((item) => (
                     <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[13px] uppercase ">
-                      <item.icon size={15} className="text-blue-500" /> {item.name}
+                      <item.icon size={15} className="text-blue-500" /> {renderName(item.name)}
                     </NavLink>
                   ))}
                 </div>
@@ -118,7 +129,7 @@ const Navbar = () => {
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.trade.map((item) => (
                     <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[12px] uppercase ">
-                      <item.icon size={15} className="text-blue-500" /> {item.name}
+                      <item.icon size={15} className="text-blue-500" /> {renderName(item.name)}
                     </NavLink>
                   ))}
                 </div>
@@ -136,7 +147,7 @@ const Navbar = () => {
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.resources.map((item) => (
                     <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase ">
-                      <item.icon size={15} className="text-blue-500" /> {item.name}
+                      <item.icon size={15} className="text-blue-500" /> {renderName(item.name)}
                     </NavLink>
                   ))}
                 </div>
@@ -168,7 +179,7 @@ const Navbar = () => {
               <div className="grid grid-cols-1 gap-3 pl-2">
                 {items.map(item => (
                   <NavLink key={item.name} to={item.path} onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-[12px] font-bold text-slate-700 uppercase">
-                    <item.icon size={14} className="text-blue-500" /> {item.name}
+                    <item.icon size={14} className="text-blue-500" /> {renderName(item.name)}
                   </NavLink>
                 ))}
               </div>

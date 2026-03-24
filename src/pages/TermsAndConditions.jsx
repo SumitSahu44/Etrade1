@@ -37,7 +37,7 @@ const TermsPage = () => {
             <ShieldCheck size={14} /> Legal Compliance
           </div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight">
-            Parekh e-Trade <span className="text-blue-400">Legal Center</span>
+            Parekh <span className="lowercase">e-</span>Trade <span className="text-blue-400">Legal Center</span>
           </h1>
           <div className="flex items-center justify-center gap-4 text-slate-300 text-xs font-bold uppercase tracking-widest">
             <span className="flex items-center gap-1"><Clock size={14} /> Last Updated: March 2026</span>

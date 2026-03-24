@@ -38,7 +38,7 @@ const ExtraFeatures = () => {
                <input type="time" className="w-full p-3 rounded-xl bg-white/10 border border-white/20 outline-none text-white" />
             </div>
             <button className="w-full bg-white text-blue-600 py-4 rounded-xl font-bold shadow-lg hover:bg-blue-50 transition-colors uppercase text-sm tracking-widest">
-              Request e-Appointment
+              Request <span className="lowercase">e-</span>Appointment
             </button>
           </form>
         </div>
