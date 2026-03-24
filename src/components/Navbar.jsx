@@ -55,21 +55,36 @@ const Navbar = () => {
 
   const getLinkStyle = (isActive) => `
     flex items-center gap-2 text-[12px] font-black uppercase tracking-[0.2em] transition-all duration-300
-    ${isActive ? 'text-blue-500' : scrolled ? 'text-slate-900 hover:text-blue-600' : 'text-white hover:text-blue-400'}
+    ${isActive ? 'text-blue-500' : scrolled ? 'text-slate-900 hover:text-blue-600' : 'text-slate-900 hover:text-blue-400'}
   `;
 
   return (
     <nav className={`fixed top-8 left-1/2 -translate-x-1/2 w-[95%] lg:w-[88%] z-[1000] transition-all duration-500 rounded-full px-10 py-4 ${
       scrolled 
       ? 'bg-white/95 backdrop-blur-md shadow-2xl border border-slate-200/50 py-3.5' 
-      : 'bg-black/30 backdrop-blur-md border border-white/10 shadow-xl' 
+      : 'bg-white/70 backdrop-blur-md border border-white/10 shadow-xl' 
     }`}>
       <div className="flex justify-between items-center">
         
         {/* Logo - Points to Home */}
-        <NavLink to="/" className={`text-xl font-black   transition-colors flex items-center gap-1 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-          PAREKH<span className="text-blue-500">E-TRADE</span>
-        </NavLink>
+       {/* Logo - Points to Home */}
+     <NavLink to="/" className="flex items-center shrink-0">
+        <img 
+          src="/Parekh  e-Trade Market (Textile).png" 
+          alt="Parekh E-Trade Logo" 
+          className={`
+            transition-all duration-300 object-contain
+            /* Mobile: Chota logo */
+            h-4 
+            /* Tablets: Thoda bada */
+            md:h-12 
+            /* Desktop: Aapka preferred size */
+            lg:h-14 
+            /* Scroll hone par responsive adjustment */
+            ${scrolled ? 'h-8 md:h-10 lg:h-12' : 'h-10 md:h-12 lg:h-14'}
+          `}
+        />
+      </NavLink>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-10" ref={dropdownRef}>

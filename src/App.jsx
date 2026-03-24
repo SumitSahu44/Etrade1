@@ -24,7 +24,7 @@ import BuyerPlatform from './pages/BuyerPlatform';
 import SellerPlatform from './pages/SellerPlatform';
 import ScrollToTop from './components/ScrollToTop';
 import TenderPortal from './pages/TenderPortal';
-
+import MapPointer from './components/MapPointer';
 
 function App() {
   return (
@@ -56,6 +56,9 @@ function App() {
           <Route path="/SellerPlatform" element={<div className="pt-24 max-w-7xl mx-auto px-6"><SellerPlatform /></div>} /> 
           <Route path="/TenderPortal" element={<div className=""><TenderPortal /></div>} />
            <Route path="/TextileAssociates" element={<div className="pt-24 max-w-7xl mx-auto px-6"><TextileAssociates /></div>} />
+         
+         <Route path="/MapPointer" element={<div className="pt-24 max-w-7xl mx-auto px-6"><MapPointer /></div>} />
+         
           </Routes>
 
           <LiveChat />
