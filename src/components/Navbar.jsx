@@ -28,7 +28,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // Tere Routes ke hisaab se Categories
   const menuGroups = {
     company: [
       { name: 'About Us', path: '/about', icon: Info },
@@ -53,16 +52,29 @@ const Navbar = () => {
     ]
   };
 
-  const renderName = (name) => {
-    // Regex to find "e-" case-insensitively and replace with lowercase 'e-'
-    // We split the string by "e-" and wrap the 'e' in a lowercase span
-    const parts = name.split(/(e-)/i);
-    return parts.map((part, i) => {
-      if (part.toLowerCase() === 'e-') {
-        return <span key={i} className="lowercase text-inherit">e-</span>;
-      }
-      return part;
-    });
+  // FIX: Har word ko alag process karo — e- prefix wale words me
+  // sirf 'e-' ko lowercase span me wrap karo, baki word normal rahega.
+  // Isse "E-Trade" → <span>e-</span>Trade banta hai bina kisi extra space ke.
+ const renderName = (name) => {
+    return (
+      <span className="flex items-center gap-1 leading-none">
+        {name.split(' ').map((word, index) => {
+          const isEWord = word.toLowerCase().startsWith('e-');
+          return (
+            <span key={index} className="inline-block">
+              {isEWord ? (
+                <>
+                  <span className="lowercase font-bold">e-</span>
+                  {word.slice(2)}
+                </>
+              ) : (
+                word
+              )}
+            </span>
+          );
+        })}
+      </span>
+    );
   };
 
   const getLinkStyle = (isActive) => `
@@ -77,21 +89,16 @@ const Navbar = () => {
       }`}>
       <div className="flex justify-between items-center">
 
-        {/* Logo - Points to Home */}
-        {/* Logo - Points to Home */}
+        {/* Logo */}
         <NavLink to="/" className="flex items-center shrink-0">
           <img
             src="/Parekh  e-Trade Market (Textile).png"
             alt="Parekh e-Trade Logo"
             className={`
             transition-all duration-300 object-contain
-            /* Mobile: Chota logo */
             h-4 
-            /* Tablets: Thoda bada */
             md:h-12 
-            /* Desktop: Aapka preferred size */
             lg:h-14 
-            /* Scroll hone par responsive adjustment */
             ${scrolled ? 'h-8 md:h-10 lg:h-12' : 'h-10 md:h-12 lg:h-14'}
           `}
           />
@@ -110,7 +117,7 @@ const Navbar = () => {
               <div className="absolute top-full pt-4 -left-6 w-60 animate-in fade-in slide-in-from-top-2">
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.company.map((item) => (
-                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[13px] uppercase ">
+                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[13px] uppercase tracking-normal">
                       <item.icon size={15} className="text-blue-500" /> {renderName(item.name)}
                     </NavLink>
                   ))}
@@ -128,7 +135,7 @@ const Navbar = () => {
               <div className="absolute top-full pt-4 -left-6 w-64 animate-in fade-in slide-in-from-top-2">
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.trade.map((item) => (
-                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[12px] uppercase ">
+                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[12px] uppercase tracking-normal">
                       <item.icon size={15} className="text-blue-500" /> {renderName(item.name)}
                     </NavLink>
                   ))}
@@ -146,7 +153,7 @@ const Navbar = () => {
               <div className="absolute top-full pt-4 -left-6 w-64 animate-in fade-in slide-in-from-top-2">
                 <div className="bg-white rounded-2xl shadow-2xl p-3 border border-slate-100">
                   {menuGroups.resources.map((item) => (
-                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase ">
+                    <NavLink key={item.name} to={item.path} className="flex items-center gap-3 p-3 rounded-xl hover:bg-blue-50 text-slate-700 hover:text-blue-600 transition-all font-bold text-[11px] uppercase tracking-normal">
                       <item.icon size={15} className="text-blue-500" /> {renderName(item.name)}
                     </NavLink>
                   ))}

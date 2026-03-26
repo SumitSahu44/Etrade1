@@ -19,13 +19,13 @@ import AppointmentForm from './pages/AppointmentForm';
 import CircularPage from './pages/CircularPage';
 import BlogPage from './pages/BlogPage';
 import MediaPage from './pages/MediaGallery';
-import TextileAssociates from './pages/TextileAssociates';
+// import TextileAssociates from './pages/TextileAssociates';
 import BuyerPlatform from './pages/BuyerPlatform';
 import SellerPlatform from './pages/SellerPlatform';
 import ScrollToTop from './components/ScrollToTop';
 import TenderPortal from './pages/TenderPortal';
-import MapPointer from './components/MapPointer';
-
+// import MapPointer from './components/MapPointer';
+import Map from './components/Map';
 function App() {
   return (
     <Router>
@@ -55,10 +55,11 @@ function App() {
            <Route path="/BuyerPlatform" element={<div className="pt-24 max-w-7xl mx-auto px-6"><BuyerPlatform /></div>} />
           <Route path="/SellerPlatform" element={<div className="pt-24 max-w-7xl mx-auto px-6"><SellerPlatform /></div>} /> 
           <Route path="/TenderPortal" element={<div className=""><TenderPortal /></div>} />
-           <Route path="/TextileAssociates" element={<div className="pt-24 max-w-7xl mx-auto px-6"><TextileAssociates /></div>} />
+           <Route path="/TextileAssociates" element={<div className="pt-30 pb-10 max-w-7xl mx-auto px-6"><Map /></div>} />
          
-         <Route path="/MapPointer" element={<div className="pt-40 pb-40 max-w-[700px] mx-auto px-6"><MapPointer /></div>} />
-         
+         {/* <Route path="/MapPointer" element={<div className="pt-40 pb-40 max-w-[700px] mx-auto px-6"><MapPointer /></div>} />
+          <Route path="/Map" element={<div className="pt-40 pb-40 max-w-[700px] mx-auto px-6"><Map /></div>} />
+          */}
           </Routes>
 
           <LiveChat />
