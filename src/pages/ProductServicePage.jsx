@@ -50,15 +50,6 @@ const ProductServicePage = () => {
               </button>
             ))}
           </div>
-          
-          {/* <div className="relative w-full md:w-72">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-            <input 
-              type="text" 
-              placeholder="Search products..." 
-              className="w-full pl-10 pr-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50"
-            />
-          </div> */}
         </div>
       </section>
 
@@ -110,7 +101,9 @@ const ProductServicePage = () => {
                 <Filter size={24} />
               </div>
               <h4 className="text-xl font-bold mb-3">Quality Grading</h4>
-              <p className="text-slate-400 text-sm leading-relaxed">Sare products ka thorough quality check aur international grading standards ensure karna.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Ensuring thorough quality checks and adherence to international grading standards for all our products.
+              </p>
             </div>
             
             <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700">
@@ -118,7 +111,9 @@ const ProductServicePage = () => {
                 <ArrowRight size={24} />
               </div>
               <h4 className="text-xl font-bold mb-3">Logistics Support</h4>
-              <p className="text-slate-400 text-sm leading-relaxed">Raw materials ko factory tak safe aur timely deliver karne ki worldwide connectivity.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Providing worldwide connectivity to ensure safe and timely delivery of raw materials directly to your factory.
+              </p>
             </div>
             
             <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700">
@@ -126,7 +121,9 @@ const ProductServicePage = () => {
                 <Search size={24} />
               </div>
               <h4 className="text-xl font-bold mb-3">Market Sourcing</h4>
-              <p className="text-slate-400 text-sm leading-relaxed">Aapki requirement ke hisaab se sahi manufacturer ya buyer dhoondhne mein help.</p>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Assisting you in finding the right manufacturers or buyers based on your specific industrial requirements.
+              </p>
             </div>
           </div>
         </div>
