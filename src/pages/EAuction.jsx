@@ -27,7 +27,7 @@ const EAuction = () => {
               <span className="text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase">Live Auction Case #TR402</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-light tracking-tight text-slate-900">
-              Premium <span className="font-bold">Mulberry Silk</span>
+              e-<span className="font-bold">Auction</span>
             </h1>
           </div>
           <div className="flex gap-8 items-center bg-slate-50 px-8 py-4 rounded-2xl border border-slate-100">
