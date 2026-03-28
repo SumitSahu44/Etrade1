@@ -12,7 +12,7 @@ const Management = () => {
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-[10px] font-black tracking-widest uppercase mb-4 border border-blue-100">
               Company Overview
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 uppercase leading-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 leading-tight">
               About Parekh <span className="text-blue-600">e-Trade.</span>
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8 text-lg font-medium">
